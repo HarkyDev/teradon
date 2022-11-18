@@ -1,0 +1,16 @@
+.sideBarButton{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-size: large;
+    padding: 0px;
+    margin: 0px;
+}
+
+*{
+}
+
+.buttonText{
+    margin: 0px;
+    padding: 0px;
+}
