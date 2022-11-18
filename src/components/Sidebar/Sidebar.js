@@ -7,19 +7,22 @@ import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import PersonIcon from '@mui/icons-material/Person';
 import SidebarButton from '../SidebarButton/SidebarButton';
+import { Button } from "@material-ui/core";
 import './index.css'
+
 
 
 function Sidebar() {
   return (
     <div className="sideBar">
-      <SidebarButton  Icon={HomeIcon} text="Home" />
+      <SidebarButton active Icon={HomeIcon} text="Home" />
       <SidebarButton  Icon={TagIcon} text="Explore" />
       <SidebarButton  Icon={NotificationsIcon} text="Notifications" />
       <SidebarButton  Icon={ChatBubbleIcon} text="Messages" />
       <SidebarButton  Icon={BookmarkIcon} text="Saved" />
       <SidebarButton  Icon={PersonIcon} text="Profile" />
 
+      <Button  className="sideBarPost" fullWidth>Post</Button>
     </div>
   );
 }
