@@ -7,7 +7,7 @@ function Feed() {
   return (
     <div className='feed'>
         <div className='feed_header'>
-        <h2> Home </h2>
+        <h2 className='homeHeader'> Home </h2>
         </div>
         <PostBox />
         <Post />

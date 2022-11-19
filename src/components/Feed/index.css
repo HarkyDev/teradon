@@ -32,4 +32,9 @@
 .feed__header > h2 {
   font-size: 20px;
   font-weight: 800;
+  margin: 0px;
+}
+
+.homeHeader{
+  margin-top: 0px;
 }
