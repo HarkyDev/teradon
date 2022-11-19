@@ -33,7 +33,6 @@ function Post() {
       </div>
       <div className="postButtons">
         <FavoriteIcon />
-        <p>10.k</p>
         <ShareIcon />
         <ChatBubbleIcon />
         <SwapHorizIcon />
@@ -66,7 +65,7 @@ function Post() {
       </div>
       <div className="postButtons">
         <FavoriteIcon />
-        <p>10.k</p>
+       
         <ShareIcon />
         <ChatBubbleIcon />
         <SwapHorizIcon />
@@ -99,7 +98,7 @@ function Post() {
       </div>
       <div className="postButtons">
         <FavoriteIcon />
-        <p>10.k</p>
+       
         <ShareIcon />
         <ChatBubbleIcon />
         <SwapHorizIcon />
@@ -132,7 +131,7 @@ function Post() {
       </div>
       <div className="postButtons">
         <FavoriteIcon />
-        <p>10.k</p>
+       
         <ShareIcon />
         <ChatBubbleIcon />
         <SwapHorizIcon />

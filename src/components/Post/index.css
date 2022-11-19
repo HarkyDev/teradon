@@ -47,17 +47,23 @@
 
 .postButtons{
     display: flex;
-    margin-top: 8px;
+    margin-top: 18px;
     padding: 4px;
-    justify-content: baseline;
+    justify-content: flex-end;
+    margin-left: 0px;
 }
 
 .postButtons > *{
-   margin-right: 60px;
+   margin-left: 60px;
 }
 
-*{
+.postButtons > * :hover{
+   margin-left: 60px;
+   color: var(--teradon-color);
+   cursor: pointer;
 }
+
+
 
 .postUserInfo > h3 {
     margin: 0px;
