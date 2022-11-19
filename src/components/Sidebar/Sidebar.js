@@ -7,6 +7,7 @@ import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import PersonIcon from '@mui/icons-material/Person';
 import SidebarButton from '../SidebarButton/SidebarButton';
+import SideBarProfile from '../SideBarProfile/SideBarProfile';
 import { Button } from "@material-ui/core";
 import './index.css'
 
@@ -15,7 +16,9 @@ import './index.css'
 function Sidebar() {
   return (
     <div className="sideBar">
+      <div className='sidebarButtons'>
       <div className="sideBarTeradon">teradon.</div>
+
       <SidebarButton active Icon={HomeIcon} text="Home" />
       <SidebarButton  Icon={TagIcon} text="Explore" />
       <SidebarButton  Icon={NotificationsIcon} text="Notifications" />
@@ -24,6 +27,8 @@ function Sidebar() {
       <SidebarButton  Icon={PersonIcon} text="Profile" />
 
       <Button  className="sideBarPost" fullWidth>Post</Button>
+      </div>
+      <SideBarProfile className="sidebarProfile" />
     </div>
   );
 }

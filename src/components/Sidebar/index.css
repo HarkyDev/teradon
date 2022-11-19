@@ -1,4 +1,7 @@
 .sideBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--teradon-background);
 }
 
@@ -18,4 +21,9 @@
     color: var(--teradon-color);
     margin-left: 20px;
     margin-top: 0px;
+}
+
+
+.sidebarProfile{
+    margin-bottom: 30px;
 }

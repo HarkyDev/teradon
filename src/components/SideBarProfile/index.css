@@ -1,0 +1,34 @@
+.sidebarProfile{
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sidebarProfile:hover{
+    cursor: pointer;
+}
+.sidebarUserImg{
+    border-radius: 100%;
+    width: 70px;
+}
+
+.sidebarUserInfo{
+    padding: 8px;
+}
+
+.sidebarUserInfo > p{
+   margin: 0px;
+}
+
+.sidebarUsername{
+
+    font-weight: 900;
+}
+
+.sidebarUserAddress{
+    font-weight: 100;
+}

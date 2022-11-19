@@ -1,5 +1,4 @@
 .exploreContainer{
-    background-color: var(--teradon-background-hover);
     color: white;
     margin-top: 30px;
     padding: 20px;
@@ -9,6 +8,7 @@
 .exploreTitle{
     text-align: center;
    font-weight: 500;
+    margin-top: 0px;
 }
 
 .exploreCard{
