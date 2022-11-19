@@ -8,5 +8,13 @@
     color: white!important;
     font-weight: 900!important;
     text-transform: inherit !important;
-    border-radius: 40px !important;
+    padding: 16px 0px !important;
+    border-radius: 20px !important;
 }   
+
+.sideBarTeradon{
+    font-weight: 800;
+    font-size: xx-large;
+    color: var(--teradon-color);
+    margin-left: 20px;
+}

@@ -15,6 +15,7 @@ import './index.css'
 function Sidebar() {
   return (
     <div className="sideBar">
+      <div className="sideBarTeradon">teradon.</div>
       <SidebarButton active Icon={HomeIcon} text="Home" />
       <SidebarButton  Icon={TagIcon} text="Explore" />
       <SidebarButton  Icon={NotificationsIcon} text="Notifications" />

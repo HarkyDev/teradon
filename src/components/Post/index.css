@@ -1,0 +1,64 @@
+.postProfilePicture{
+    border-radius: 100%;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.postProfilePicture:hover{
+    transition: 200ms ease-in-out;
+    outline: 2px solid var(--teradon-color);
+    cursor: pointer;
+
+    
+}
+
+
+.postContentContainer{
+    max-width: 30vw;
+    margin-left: 8px;
+}
+
+.Post{
+    display: flex;
+    max-width: 50vw;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.Post:hover{
+    transition: 400ms ease-out;  
+    background-color: rgb(26, 26, 26);
+}
+
+.postUserInfo{
+    display: flex;
+    margin: 0px;
+}
+
+.postUserAdress{
+    font-size: medium;
+    font-weight: 400;
+    margin-left: 12px;
+}
+
+.postTextContent{
+ margin: 0px;
+}
+
+.postButtons{
+    display: flex;
+    margin-top: 8px;
+    padding: 4px;
+    justify-content: baseline;
+}
+
+.postButtons > *{
+   margin-right: 60px;
+}
+
+*{
+}
+
+.postUserInfo > h3 {
+    margin: 0px;
+}

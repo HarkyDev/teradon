@@ -1,0 +1,27 @@
+.searchInput{
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: var(--teradon-background-hover);
+    border-radius: 10px;
+    color: var(--teradon-color);
+    padding-left: 20px;
+    padding-left: 40px;
+}
+
+.searchInput:focus{
+    outline: 1px solid var(--teradon-color);
+   
+}
+
+.searchIconBar{
+    position: absolute;
+    color: var(--teradon-color);
+    left: 10px;
+}
+
+.rightSearch{
+    position: relative;
+    display: flex;
+    align-items: center;
+}

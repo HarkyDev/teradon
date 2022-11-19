@@ -1,23 +1,14 @@
 import './App.css';
 import Sidebar from './components/Sidebar/Sidebar';
-
+import Feed from './components/Feed/Feed'
+import SidebarRight from './components/SidebarRight/SidebarRight';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <Sidebar />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Feed />
+        <SidebarRight />
+        
     </div>
   );
 }
