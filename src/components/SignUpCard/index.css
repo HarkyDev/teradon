@@ -1,0 +1,47 @@
+.signUpForm{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.inputContainer > input {
+font-size: x-large;
+padding: 16px;
+margin-bottom: 16px;
+border-radius: 10px;
+border: none;
+
+}
+
+.signUpForm > button{
+font-size: x-large;
+padding: 16px;
+margin-bottom: 16px;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+background-color: var(--teradon-color);
+
+}
+
+
+.signUpSubmitBtn{
+    color: white !important;
+    font-weight: 800 ;
+}
+
+.inputContainer{
+    position: relative;
+}
+
+.signUpFormIcon{
+    position: absolute;
+    right: 335px;
+    top: 10px;
+    width: 40px !important; 
+    height: 40px !important; 
+    color: var(--teradon-color);
+    
+}

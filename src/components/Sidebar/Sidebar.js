@@ -9,6 +9,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import SidebarButton from '../SidebarButton/SidebarButton';
 import SideBarProfile from '../SideBarProfile/SideBarProfile';
 import { Button } from "@material-ui/core";
+import {Link} from 'react-router-dom'
 import './index.css'
 
 
@@ -16,17 +17,20 @@ import './index.css'
 function Sidebar() {
   return (
     <div className="sideBar">
-      <div className='sidebarButtons'>
-      <div className="sideBarTeradon">teradon.</div>
-
-      <SidebarButton active Icon={HomeIcon} text="Home" />
-      <SidebarButton  Icon={TagIcon} text="Explore" />
-      <SidebarButton  Icon={NotificationsIcon} text="Notifications" />
-      <SidebarButton  Icon={ChatBubbleIcon} text="Messages" />
-      <SidebarButton  Icon={BookmarkIcon} text="Saved" />
-      <SidebarButton  Icon={PersonIcon} text="Profile" />
-
-      <Button  className="sideBarPost" fullWidth>Post</Button>
+      <div className="sidebarButtons">
+        <div className="sideBarTeradon">teradon.</div>
+        <SidebarButton active Icon={HomeIcon} text="Home" />
+        <SidebarButton Icon={TagIcon} text="Explore" />
+        <SidebarButton Icon={NotificationsIcon} text="Notifications" />
+        <SidebarButton Icon={ChatBubbleIcon} text="Messages" />
+        <SidebarButton Icon={BookmarkIcon} text="Saved" />
+        <SidebarButton Icon={PersonIcon} text="Profile" />
+        <Button className="sideBarPost" fullWidth>
+          Post
+        </Button>
+        <Link to="/login">Login</Link>;
+        <Link to="/">Home</Link>;
+        <Link to="/signup">signup</Link>;
       </div>
       <SideBarProfile className="sidebarProfile" />
     </div>
