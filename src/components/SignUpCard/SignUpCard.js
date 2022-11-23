@@ -6,22 +6,27 @@ import PersonIcon from "@mui/icons-material/Person";
 import PasswordIcon from "@mui/icons-material/Password";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import {Link} from 'react-router-dom'
+import { createUserWithEmailAndPassword } from '@firebase/auth';
+import {auth} from '../../firebaseConfig'
 
 
 function SignUpCard() {
 
-const [formData, setFormData] = useState({
-  username: "",
-  displayname: "",
-  password: "",
-  email: ""
-});
+const [registerEmail, setRegisterEmail] = useState("");
+const [registerPassword, setRegisterPassword] = useState('')
 
-const onChangeHandler = (event) => {
-  setFormData(() => ({
-    ...formData,
-    [event.target.name]: event.target.value,
-  }));
+const register = async () => {
+  try {
+    const user = await createUserWithEmailAndPassword(
+      auth,
+      registerEmail,
+      registerPassword
+    );
+    console.log(user);
+  } catch (error) {
+    console.log(error.message);
+  }
 };
 
   return (
@@ -36,43 +41,34 @@ const onChangeHandler = (event) => {
             className="formUsername"
             name="username"
             placeholder="Username"
-            onChange={onChangeHandler}
+            onChange={(event) => {
+              setRegisterEmail(event.target.value);
+            }}
           ></input>
         </div>
 
         <div className="inputContainer">
           <PasswordIcon className="signUpFormIcon" />
           <input
-            className="formDisplayName"
-            name="displayname"
-            placeholDer="Display name"
-            onChange={onChangeHandler}
-          ></input>
-        </div>
-        <div className="inputContainer">
-          <AlternateEmailIcon className="signUpFormIcon" />
-          <input
             className="formPassword"
             name="password"
             type="Password"
             placeholder="password"
-            onChange={onChangeHandler}
+            onChange={(event) => {
+              setRegisterPassword(event.target.value);
+            }}
           ></input>
         </div>
 
-        <div className="inputContainer">
-          <MailOutlineIcon className="signUpFormIcon" />
-          <input
-            className="formEmail"
-            name="email"
-            placeholder="Email"
-            onChange={onChangeHandler}
-          ></input>
+        <div>
+          <Link to="/login" className="signUpLoginLink">
+            <p>Already have an account?</p>
+          </Link>
         </div>
         <Button
           className="signUpSubmitBtn"
           type="button"
-          onClick={() => console.log(formData)}
+          onClick={register}
           fullWidth
         >
           Sign up

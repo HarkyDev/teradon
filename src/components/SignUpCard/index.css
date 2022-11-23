@@ -15,6 +15,12 @@ border: none;
 
 }
 
+.inputContainer > :focus {
+outline: var(--teradon-color) 2px solid;
+border: none;
+
+}
+
 .signUpForm > button{
 font-size: x-large;
 padding: 16px;
@@ -44,4 +50,8 @@ background-color: var(--teradon-color);
     height: 40px !important; 
     color: var(--teradon-color);
     
+}
+
+.signUpLoginLink{
+    color: white;
 }
